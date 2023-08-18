@@ -1,0 +1,44 @@
+.hnff{
+    &:hover{
+        transform: translateX(-10px);
+
+    }
+}
+// .bgbgff{
+    // &:hover{
+        // transform: translateX(10px);
+
+    // }
+// }
+
+.gfg{
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(8, 141, 121);
+        width: 0;
+        height: 2px;
+        transition: all 0.3s ease-out;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+.lineheight{
+    line-height: 22px;
+}
+.white-arrow {
+    visibility: hidden;
+}
+
+.goog{
+    transition: all 2s ease-in-out;
+
+    & :hover .white-arrow{
+        visibility: visible !important;
+    }
+
+}
